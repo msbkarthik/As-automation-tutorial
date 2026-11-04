@@ -4,7 +4,8 @@
   "description": "In-memory e-commerce REST API with login, register, checkout, and healthcheck.",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test": "mocha \"test/pathCoverage/**/*.js\" --timeout 10000 --exit --reporter mochawesome --reporter-options reportDir=reports,reportFilename=mochawesome,overwrite=true,html=true,json=true"
   },
   "license": "MIT",
   "dependencies": {
@@ -12,5 +13,11 @@
     "js-yaml": "^4.1.0",
     "jsonwebtoken": "^9.0.2",
     "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "mochawesome": "^7.1.3",
+    "supertest": "^7.0.0"
   }
 }
