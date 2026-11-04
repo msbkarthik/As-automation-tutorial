@@ -1,0 +1,16 @@
+{
+  "name": "as-automation-tutorial",
+  "version": "1.0.0",
+  "description": "In-memory e-commerce REST API with login, register, checkout, and healthcheck.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
